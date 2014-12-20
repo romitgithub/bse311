@@ -1,0 +1,399 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'feathericons';
+  src:url('fonts/feathericons/feathericons.eot?-8is7zf');
+  src:url('fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+    url('fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+    url('fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+    url('fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'codropsicons';
+  src:url('fonts/codropsicons/codropsicons.eot');
+  src:url('fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+    url('fonts/codropsicons/codropsicons.woff') format('woff'),
+    url('fonts/codropsicons/codropsicons.ttf') format('truetype'),
+    url('fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+html {
+      height: 100%;
+    }
+    body {
+      background-color: #383737;
+      padding: 0;
+      text-align: center;
+      font-family: 'Raleway', Arial, sans-serif;
+      position: relative;
+      margin: 0;
+      height: 100%;
+    }
+    
+    .wrapper {
+      /*background: linear-gradient(52deg, rgba(87, 5, 9, 0.51), rgba(48, 89, 71, 0.68));*/
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+    
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .main section .page_container {
+      position: relative;
+      top: 15%;
+      margin: 0 auto 0;
+      max-width: 1000px;
+      z-index: 3;
+    }
+    
+    .main section.page1 {
+      /*background:rgb(230, 217, 200);*/
+    }
+    .main section.page2 {
+      /*background: #555557 url(back-phone.png) no-repeat center -150px ;*/
+    }
+    .main section.page3 {
+      /*background:url(tilted-phone.png) no-repeat 156px -150px ;*/
+    }
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+    
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
+
+
+
+
+
+    /* Common style */
+.grid {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  text-align: center;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 3%;
+  max-width: 200px;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  min-width: 200px;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  font-weight: 300;
+  width: 160px;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+  text-align: right;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+    width: 160px;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'feathericons';
+}
+
+figure.effect-marley p
+{
+  position: absolute;
+  font-size: 10px;
+}
+
+figure.effect-marley h2
+{
+  position: absolute;
+  top: 100px;
+}
+
+
+/*---------------*/
+/***** Marley *****/
+/*---------------*/
+
+figure.effect-marley figcaption {
+  text-align: right;
+  padding: 10px;
+  background-color: rgba(0,0,0,0);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+figure.effect-marley h2,
+figure.effect-marley p {
+  position: absolute;
+  padding: 10px 0;
+}
+
+
+figure.effect-marley p {
+  bottom: 30px;
+  top: 200px;
+  font-size: 10px;
+  line-height: 1.5;
+  text-transform: lowercase;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+figure.effect-marley:hover figcaption
+{
+  background-color: rgba(0,0,0,0.6);
+}
+
+figure.effect-marley h2 {
+  top: 180px;
+  font-size: 14px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,20px,0);
+  transform: translate3d(0,20px,0);
+}
+
+figure.effect-marley:hover h2 {
+  -webkit-transform: translate3d(0,-20px,0);
+  transform: translate3d(0,-20px,0);
+}
+
+figure.effect-marley h2::after {
+  position: absolute;
+  top: 85%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transform: translate3d(0,40px,0);
+  transform: translate3d(0,40px,0);
+}
+
+figure.effect-marley h2::after,
+figure.effect-marley p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+/* Media Queries */
+/* Let's redefine the width of each anchor and the margins */
+
+@media screen and (max-width: 50em) {
+  .content {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .grid figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+
+/* sponsors ticker */
+
+.circlecopy {
+  position: fixed;
+  right: -180px;
+  top: 150px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px dashed rgba(255,255,255,0.5);
+}
+
+.circle {
+  position: fixed;
+  right: -180px;
+  top: 150px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/*LITTLE CIRCLES*/
+.circle li {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  /*background: white;*/
+  /*background: url('img/logos/i3indya.png');*/
+  background-size: 100px;
+  border-radius: 50%;
+  /*box-shadow: inset 0px 0px 5px white;*/
+  list-style-type: none;
+  text-align: center;
+  font: 20px/50px Helvetica, Arial, sans-serif;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+.circle li:nth-child(1) {
+  top: -25px;
+  left: 125px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.circle li:nth-child(2) {
+  top: 125px;
+  left: 275px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.circle li:nth-child(3) {
+  top: 275px;
+  left: 125px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.circle li:nth-child(4) {
+  top: 125px;
+  left: -25px;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+/* sponsors ticker  */

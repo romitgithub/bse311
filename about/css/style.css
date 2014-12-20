@@ -1,0 +1,328 @@
+html, body
+{
+  margin:0;
+  padding: 0;
+  background: #efefef;
+}
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+  font-family: 'Helvetica', Arial, sans-serif;
+  text-align: justify;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+}
+section.module.parallax {
+  background-position: 0 0;
+}
+section.module.parallax h1 {
+  color: #1e1e1e;
+  font-size: 50px;
+  font-weight:700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height:280px;
+  color: #fff;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+h2
+{
+  margin: 0;
+  padding: 0;
+}
+
+section.module.parallax-1 {
+  height: 300px;
+  background-image: url("../img/aboutus.png");
+  background-size: 100%;
+  -webkit-background-size:100%;
+}
+section.module.parallax-2 {
+  background: #EFEFEF;
+}
+
+.container
+{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 50px;
+}
+
+#numberpart
+{
+  text-align: center;
+}
+
+.numbers
+{
+  display: inline-block;
+  text-align: center;
+}
+
+.grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+  display: block;
+  padding: 0;
+  padding-bottom: 1em;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  min-width: 230px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 23%;
+  height: 225px;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  opacity: 0.8;
+  overflow: hidden;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  margin-top: 120px;
+  font-size: 20px;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* Individual effects */
+
+/*---------------*/
+/***** Julia *****/
+/*---------------*/
+
+figure.effect-julia {
+  background: #2f3238;
+}
+
+figure.effect-julia img {
+  max-width: 250px;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+  text-align: left;
+}
+
+figure.effect-julia h2 {
+  position: relative;
+  padding: 0.5em 0;
+  margin-bottom: 100px;
+  font-size: 17px;
+}
+
+figure.effect-julia p {
+  display: inline-block;
+  margin: 0 0 0.25em;
+  padding: 0.4em 1em;
+  background: rgba(255,255,255,0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 60%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px,0,0);
+  transform: translate3d(-360px,0,0);
+}
+
+figure.effect-julia p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  margin-top: 100px;
+}
+
+figure.effect-julia p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect-julia p:nth-of-type(3) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+figure.effect-julia:hover p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect-julia:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale3d(1.1,1.1,1);
+  transform: scale3d(1.1,1.1,1);
+}
+
+figure.effect-julia:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/*-----------------*/
+
+
+.blocks
+{
+  position: relative;
+  padding: 20px;
+  border: 2px solid #898989;
+  padding-top: 40px;
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+
+.blocks h2
+{
+  position: absolute;
+  top:-25px;
+  left: 60px;
+  width: 220px;
+  background: #efefef;
+  text-align: center;
+  border: 2px solid #898989;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.linkinbetween
+{
+  color: rgb(74, 65, 53);
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#footer
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 100;
+}
+
+#footer ul
+{
+  list-style-type: none;
+  text-align: center;
+  height: 30px;
+  margin: 0;
+}
+
+#footer ul li
+{
+  display: inline-block;
+  line-height: 30px;
+  font-size: 13px;
+  margin-left: 20px;
+  font-family: 'Helvetica', Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+#footer a
+{
+  color:white;
+}
