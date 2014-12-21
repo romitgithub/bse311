@@ -12,7 +12,7 @@ section.module:last-child {
   margin-bottom: 0;
 }
 section.module h2 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Helvetica", Arial, sans-serif;
   font-size: 30px;
 }
 section.module p {

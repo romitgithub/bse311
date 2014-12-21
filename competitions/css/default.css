@@ -1,0 +1,293 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html { font-size: 100%; 	padding: 0; margin: 0;height: 100%;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #b1aea6;
+	background: url('../images/new/compbg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+body::-webkit-scrollbar 
+{
+    width: .4em;
+}
+		 
+body::-webkit-scrollbar-track 
+{
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,1);
+}
+		 
+body::-webkit-scrollbar-thumb 
+{
+	background-color: #1a1a1a;
+	outline: 2px solid white;
+}
+
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#59ABE3; /* change if the mask should have another color then white */
+	z-index:1199; /* makes sure it stays on top */
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url(../loading-bubbles.svg); /* path to your loading animation */
+	background-size: 60px 60px;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+.shadow
+{
+	text-shadow: rgb(80, 154, 204) 1px 1px,
+    rgb(80, 154, 204) 2px 2px,
+    rgb(80, 154, 204) 3px 3px,
+    rgb(80, 154, 204) 4px 4px,
+    rgb(80, 154, 204) 5px 5px,
+    rgb(80, 154, 204) 6px 6px,
+    rgb(80, 154, 204) 7px 7px,
+    rgb(80, 154, 204) 8px 8px,
+    rgb(80, 154, 204) 9px 9px,
+    rgb(80, 154, 204) 10px 10px,
+    rgb(80, 154, 204) 11px 11px,
+    rgb(80, 154, 204) 12px 12px,
+    rgb(80, 154, 205) 13px 13px,
+    rgb(81, 155, 206) 14px 14px,
+    rgb(81, 156, 207) 15px 15px,
+    rgb(82, 157, 209) 16px 16px,
+    rgb(82, 158, 210) 17px 17px,
+    rgb(83, 159, 211) 18px 18px,
+    rgb(83, 160, 212) 19px 19px,
+    rgb(84, 161, 214) 20px 20px,
+    rgb(84, 162, 215) 21px 21px,
+    rgb(85, 163, 216) 22px 22px,
+    rgb(85, 164, 218) 23px 23px,
+    rgb(86, 165, 219) 24px 24px,
+    rgb(86, 166, 220) 25px 25px,
+    rgb(87, 167, 221) 26px 26px,
+    rgb(87, 168, 223) 27px 27px,
+    rgb(88, 169, 224) 28px 28px,
+    rgb(88, 170, 225) 29px 29px,
+    rgb(89, 171, 227) 30px 30px;
+	height: 100%;
+	width: 100%;
+	font-size: 75px;
+	text-align: center;
+	color: white;
+}
+
+a 
+{
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+.container.demo-5
+{
+	height: 100%;
+}
+
+#otherContent
+{
+	height: 100%;
+}
+
+.main,
+.container > header {
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	position: relative;
+	top: 10px;
+	padding-top: 0em;
+	margin-top: 8%;
+	margin-bottom: 50px;
+	height: 80%;
+}
+
+.column {
+	float: left;
+	min-height: 300px;
+	min-width: 260px;
+	position: fixed;
+}
+
+
+.column:nth-child(2) {
+	min-height: 400px;
+	box-shadow: -1px 0 0 rgba(0,0,0,0.1);
+
+}
+
+.column:last-child:before {
+	content: '';
+	position: absolute;
+	height: 7px;
+	background: #ceccc6;
+	top: 100px;
+	left: 10px;
+}
+
+.column p {
+	font-weight: 300;
+	font-size: 2em;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	line-height: 1.5;
+}
+
+.container > header {
+	padding: 2.875em 1.875em 2.875em;
+	text-align: center;
+	background: rgba(0,0,0,0.01);
+}
+
+.container > header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	color: #89867e;
+	font-weight: 300;
+}
+
+.container > header span {
+	display: block;
+	font-size: 60%;
+	color: #ceccc6;
+	padding: 0 0 0.6em 0.1em;
+}
+
+/* Header Style */
+.codrops-top {
+	background:transparent;
+	text-transform: uppercase;
+	position: relative;
+	font-size: 0.68em;
+}
+
+#tech
+{
+	position: fixed;
+	z-index: 1000;
+}
+
+#tech a
+{
+	position:fixed;top:10px;left:10px;
+}
+
+
+@media screen and (max-width: 46.0625em) {
+
+	.main {
+		padding: 0;
+	}
+
+	.column {
+		width: 100%;
+		min-width: auto;
+		min-height: auto;
+		padding: 3em 2em; 
+	}
+
+	.column p {
+		text-align: left;
+		font-size: 1.5em;
+	}
+
+	.column:nth-child(2) {
+		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+		background-position: 90px 3em;
+	}
+}
+
+#footer
+{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-top: 10px;
+	box-shadow: 0px 0px 2px black;
+	background: #1a1a1a;
+	z-index: 1000;
+	text-align: center;
+}
+
+#footer ul
+{
+	padding: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: 0px;
+	text-align: center;
+}
+
+#footer ul li
+{
+	display: inline-block;
+	padding: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 14px;
+}
+
+#footer ul li a
+{
+	color: white;
+	font-weight: 500;
+}
